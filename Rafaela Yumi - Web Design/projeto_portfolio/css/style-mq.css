@@ -1,0 +1,194 @@
+#clean_code {
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+#contato_rafa {
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+#mobile_first {
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+#ux_ui {
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+#portfolio {
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+}
+
+ /* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* BACKGROUND CYBERPUNK */
+body {
+    background: #070707;
+    color: #e4e4e4;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255,0,40,0.15), transparent 60%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* HEADER CYBERPUNK */
+header {
+    width: 100%;
+    padding: 20px 40px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255,0,40,0.4);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    color: #ff0033;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #ff0033;
+}
+
+/* BURGER BUTTON */
+#burger {
+    color: #ff0033;
+    font-size: 40px;
+    padding: 15px;
+    cursor: pointer;
+    display: none; /* desktop some */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-shadow: 0 0 8px #ff0033;
+}
+
+/* MENU DESKTOP */
+menu#itens {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+menu#itens ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+menu#itens a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+/* HOVER NEON */
+menu#itens a:hover {
+    color: #ff0033;
+    text-shadow: 0 0 12px #ff0033;
+}
+
+menu#itens a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #ff0033;
+    transition: 0.3s ease;
+    box-shadow: 0 0 6px #ff0033;
+}
+
+menu#itens a:hover::after {
+    width: 100%;
+}
+
+/* MAIN */
+main {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #ff1a3d;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ff0022;
+}
+
+/* IMAGENS */
+#portfolio, #clean_code, #contato_rafa, #mobile_first, #ux_ui {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px auto;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #ff3355;
+    margin-top: 30px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    #burger {
+        display: block;
+    }
+
+    menu#itens {
+        display: none;
+        width: 100%;
+    }
+
+    menu#itens ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px 0;
+        background: rgba(0,0,0,0.6);
+        border-bottom: 1px solid rgba(255,0,40,0.3);
+    }
+}

@@ -1,0 +1,121 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body dark elegante */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0d0d0f, #1a1a1e);
+  color: #e3e3e3;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+header h1 {
+  color: #9b6dff;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* MENU */
+menu {
+  background: #121216;
+  border: 1px solid rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.5);
+  position: fixed;
+  top: 90px;
+  left: 20px;
+}
+
+menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+menu li a {
+  color: #cfc7ff;
+  text-decoration: none;
+  padding: 10px 14px;
+  background: rgba(155, 109, 255, 0.08);
+  border-radius: 8px;
+  transition: 0.3s ease;
+  display: block;
+  font-weight: 500;
+}
+
+menu li a:hover {
+  background: rgba(155, 109, 255, 0.18);
+  transform: translateX(6px);
+}
+
+/* MAIN */
+main {
+  margin-left: 260px;
+  padding: 15px;
+}
+
+/* ÍCONES */
+main img {
+  width: 60px;
+  opacity: 0.8;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+main img:hover {
+  opacity: 1;
+  transform: scale(1.06);
+}
+
+/* Article */
+arcticle {
+  margin-top: 30px;
+  background: #16161b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+arcticle h2 {
+  color: #b48cff;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+arcticle p {
+  margin-bottom: 15px;
+  color: #d8d8d8;
+  line-height: 1.6;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  menu {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    top: 0;
+    left: 0;
+  }
+
+  main {
+    margin-left: 0;
+  }
+}
